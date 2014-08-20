@@ -11,6 +11,15 @@ describe('referer-filter', function(){
     next.reset();
   });
 
+  describe('without any rules', function(){
+    var filter = sut();
+
+    it('should allow any referer', function(){
+      filter({}, null, next);
+      sinon.assert.calledWith(next);
+    });
+  });
+
   describe('with a string rule', function(){
     var filter = sut('foo');
 
@@ -43,4 +52,14 @@ describe('referer-filter', function(){
     });
   });
 
+  describe('with a rule', function(){
+    var filter = sut(['asdfasdf']);
+
+    it('should block if no referer header exists', function(){
+      filter({headers:{}}, null, next);
+      sinon.assert.calledWith(next, sinon.match({
+        status: 403
+      }));
+    });
+  });
 });
