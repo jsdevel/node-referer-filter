@@ -42,8 +42,8 @@ THE SOFTWARE.
 [npm-url]: https://npmjs.org/package/referer-filter
 [npm-image]: http://img.shields.io/npm/v/referer-filter.svg
 
-[travis-url]: https://travis-ci.org/jsdevel/referer-filter
-[travis-image]: http://img.shields.io/travis/jsdevel/referer-filter.svg
+[travis-url]: https://travis-ci.org/jsdevel/node-referer-filter
+[travis-image]: http://img.shields.io/travis/jsdevel/node-referer-filter.svg
 
-[coveralls-url]: https://coveralls.io/r/jsdevel/referer-filter
-[coveralls-image]: http://img.shields.io/coveralls/jsdevel/referer-filter/master.svg
+[coveralls-url]: https://coveralls.io/r/jsdevel/node-referer-filter
+[coveralls-image]: http://img.shields.io/coveralls/jsdevel/node-referer-filter/master.svg
