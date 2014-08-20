@@ -1,7 +1,7 @@
 {
   "name": "referer-filter",
   "main": "index.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Middleware to filter requests by referer header values.",
   "author": "Joseph Spencer",
   "scripts": {
